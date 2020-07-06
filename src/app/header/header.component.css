@@ -44,7 +44,7 @@ nav h5 {
 .navbar-toggler {
     font-size: 30px;
     color: white;
-    padding-left: 10px;
+    /* padding-left: 10px; */
     padding-right: 10px;
 }
 

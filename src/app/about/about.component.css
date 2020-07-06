@@ -1,0 +1,9 @@
+.progress {
+    height: 25px;
+}
+
+div span {
+    font-size: .8rem;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    /* font-family: Impact, Charcoal, sans-serif; */
+}
