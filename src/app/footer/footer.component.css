@@ -4,6 +4,11 @@ a {
 }
 
 footer {
-    /* background-image: linear-gradient(to bottom, rgb(3, 3, 94), black); */
     background-color: black;
+}
+
+/* ==== Icon styling =============================================================================================== */
+  
+.icons a i {
+    font-size: 1.5rem;
 }

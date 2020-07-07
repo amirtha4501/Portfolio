@@ -9,9 +9,9 @@ function about() {
     this.txt = '';
     this.tick();
     this.isDeleting = false;
-};
+  };
 
-TxtType.prototype.tick = function() {
+  TxtType.prototype.tick = function() {
     var i = this.loopNum % this.toRotate.length;
     var fullTxt = this.toRotate[i];
 
@@ -39,10 +39,10 @@ TxtType.prototype.tick = function() {
 
     setTimeout(function() {
     that.tick();
-    }, delta);
-};
+      }, delta);
+  };
 
-window.onload = function() {
+  window.onload = function() {
     var elements = document.getElementsByClassName('typewrite');
     for (var i=0; i<elements.length; i++) {
         var toRotate = elements[i].getAttribute('data-type');
@@ -65,11 +65,11 @@ window.onload = function() {
   styleUrls: ['./about.component.css']
 })
 export class AboutComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit(): void {
+  mySubscription: any;
+  constructor() { 
     about();
   }
 
+  ngOnInit(): void {
+  }
 }

@@ -12,19 +12,34 @@ section {
 
 .home {
     vertical-align: middle;
-    /* position: absolute; */
     text-transform: uppercase;
     letter-spacing: 2px;
     top: 50%;
     left: 50%;
 }
 
-.home h1 {
-    font-size: 1.8rem;
+@media screen and (max-height: 870px) {
+    .home h1 {
+        font-size: 1rem;
+    }
+    .home h3 {
+        font-size: 0.5rem;
+    }
+    .home div a {
+        font-size: 0.6rem;
+    }
 }
 
-.home h3 {
-    font-size: 1rem;
+@media screen and (min-width: 1000px) and (max-height: 2500px) {
+    .home h1 {
+        font-size: 2rem;
+    }
+    .home h3 {
+        font-size: 1rem;
+    }
+    .home div a {
+        font-size: 1rem;
+    }
 }
 
 @keyframes change {
@@ -47,7 +62,6 @@ section {
     height: 50px;
     background-color: transparent;
     font-size: 1.5rem;
-    /* border: 2px solid rgba(252, 252, 253, 0.8); */
 }
 
 .box div:nth-child(1) {
@@ -126,6 +140,3 @@ section {
         opacity: 0;
     }
 }
-
-
-/* ==== Side navs ============================================================================================================== */
