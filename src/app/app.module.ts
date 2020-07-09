@@ -9,7 +9,8 @@ import { FooterComponent } from './footer/footer.component';
 import { AboutComponent } from './about/about.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { ContactComponent } from './contact/contact.component';
-import { RouterModule } from '@angular/router'
+import { RouterModule } from '@angular/router';
+import { MainComponent } from './main/main.component'
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { RouterModule } from '@angular/router'
     FooterComponent,
     AboutComponent,
     PortfolioComponent,
-    ContactComponent
+    ContactComponent,
+    MainComponent
   ],
   imports: [
     BrowserModule,

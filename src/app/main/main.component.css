@@ -1,0 +1,273 @@
+/* ==== Main ====================================================================================================== */
+
+@media screen and (max-width: 992px) {
+    .main-header li a {
+        font-size: 20px;
+        color: white;
+    }
+}
+  
+@media screen and (max-width: 700px) {
+    .main-header li a {
+        font-size: 20px;
+        color: white;
+    }
+    .main-header a img {
+        width: 75px;
+    }
+}
+
+@media screen and (max-width: 2700px) {
+    .main-header li a {
+        font-size: 20px;
+        color: white;
+    }
+}
+
+.main-header {
+    background-color: rgb(116, 58, 192);
+}
+
+.main-header h5 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.navbar-default{
+    background:transparent;
+    background-image:none;
+    border-color:transparent;
+    box-shadow:none;
+}
+
+.navbar-toggler {
+    outline: none;
+}
+
+.navbar-toggler {
+    font-size: 30px;
+    color: white;
+    padding-right: 10px;
+}
+
+.navbar-toggler:hover {
+    background-color: rgb(197, 127, 243);
+}
+
+.nav-item::after{
+    content:'';
+    display:block;
+    width:0px;
+    height:2px;
+    background:#edfe00;
+    transition: 0.2s;
+}
+
+.nav-item:hover::after{
+    width:100%;
+}
+
+.navbar-nav {
+    color:#edfe00;
+}
+
+.nav-link{
+    transition:0.2s;
+}
+
+.dropdown-item:focus, .dropdown-item:hover {
+    background:#edfe00;
+}
+
+/* ==== side bar ================================================================================================== */
+
+@media screen and (min-width: 1050px) {
+    .sidebar {
+        position: fixed;
+        top: 40%;
+        bottom: 0;
+        left: 0;
+        z-index: 1000;
+        display: block;
+        overflow-x: hidden;
+    }
+    .sidebar .border {
+        box-shadow: 5px 8px 6px -6px grey;
+    }
+    .sidebar ul li a {
+        color: rgb(116, 58, 192);
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    .sidebar {
+        display: none;
+    }
+}
+/* ==== About =====================================================================================================  */
+
+.progress {
+    height: 25px;
+}
+
+.progress-bar {
+    background-color:  rgb(171, 123, 235);
+}
+
+div span {
+    font-size: .8rem;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+.dodeca, .dodeca div {
+    margin: 0 auto;
+    transform-origin: 50% 50%;
+    overflow: hidden;
+    width: 300px;
+    height: 300px;
+}
+
+.dodeca {
+    transform: rotate(120deg);
+}
+
+.dode1 {
+    transform: rotate(-60deg);
+}
+
+.dode2 {
+    transform: rotate(-60deg);
+}
+
+/* ==== Project =================================================================================================== */
+
+.hover_project{
+    padding: 0px;
+    position: relative;
+    overflow: hidden;
+    height: 230px;
+}
+
+.hover_project:hover .caption{
+    opacity: 1;
+    transform: translateY(-150px);
+    -webkit-transform:translateY(-150px);
+    -moz-transform:translateY(-150px);
+    -ms-transform:translateY(-150px);
+    -o-transform:translateY(-150px);
+}
+
+.hover_project img{
+    z-index: 4;
+}
+
+.hover_project .caption{
+    position: absolute;
+    top:180px;
+    -webkit-transition:all 0.3s ease-in-out;
+    -moz-transition:all 0.3s ease-in-out;
+    -o-transition:all 0.3s ease-in-out;
+    -ms-transition:all 0.3s ease-in-out;
+    transition:all 0.3s ease-in-out;
+    width: 100%;
+}
+
+.hover_project .blur{
+    background-color: rgba(0,0,0,0.9);
+    height: 300px;
+    z-index: 5;
+    position: absolute;
+    width: 100%;
+}
+
+.hover_project .caption-text{
+    z-index: 10;
+    color: #fff;
+    position: absolute;
+    height: 300px;
+    text-align: center;
+    top: -20px;
+    width: 100%;
+}
+
+@media screen and (min-width: 900px) {
+    .caption .caption-text p {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .content {
+        display: none;
+    }
+}
+
+/* Language known */
+
+.lang {
+    font-size: 1rem;
+}
+
+.topic {
+    color: rgb(116, 58, 192);
+}
+
+.content {
+    font-size: 1.3em;
+}
+
+/* Modal */
+
+.icons a i {
+    font-size: 1.5rem;
+    color: rgb(116, 58, 192);
+}
+
+.close i {
+    font-size: 1.6rem;
+}
+
+.close i:hover {
+    color: rgba(236, 8, 8, 0.932);
+}
+
+/* Carousel image */
+
+@media screen and (max-height: 570px) {
+    .card img {
+        height: 300px;
+    }
+}
+
+@media screen and (min-height: 571px) and (max-height: 670px) {
+    .card img {
+        height: 290px;
+    }
+}
+
+@media screen and (min-height: 671px) and (max-height: 840px) {
+    .card img {
+        height: 330px;
+    }
+}
+
+@media screen and (min-height: 841px) and (max-height: 1025px) {
+    .card img {
+        height: 380px;
+    }
+}
+
+@media screen and (min-height: 1026px) and (max-height: 1400px) {
+    .card img {
+        height: 445px;
+    }
+}
+
+@media screen and (min-width:1025px) {
+    .card img {
+        height: 445px;
+    }
+}
+
+/* ==== Experience ================================================================================================= */
+
