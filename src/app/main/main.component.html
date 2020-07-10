@@ -46,13 +46,41 @@
                 </li>
                 <li>
                     <a class="nav-link" href="https://api.whatsapp.com/send?phone=9095999111" target="_blank" title="Whatsapp">
-                        <i class="fab fa-whatsapp-square"></i>
+                        <i class="fab fa-whatsapp"></i>
                     </a>
                 </li>
             </ul>
         </div>
     </div>
 </div>
+
+<!-- ==== Home ==================================================================================================== -->
+
+<section id="home" class="mt-5">
+    <div class="container h-100">
+        <div class="row justify-content-center align-items-center h-100">
+            <div class="rounded p-3 m-2">
+                <h1 class="text-white text-center ">Welcome to Amirtha<small>'s</small> Website!</h1>
+                <h3 class="text-white text-center">A Full-stack web developer</h3>
+                <div class="container mt-5 col-10">
+                    <p class="lang text-white">
+                       <strong> I'm Amirtha, a Full-stack developer who have serious passion for UI effects and creating intitutive 
+                        dynamic user experiences.</strong>
+                    </p>
+                    <p class="lang text-white">
+                        <strong>Let's look at my latest projects on the web portfolio page.</strong>
+                    </p>
+                </div>
+                <span class="icons mt-5" id="touch-button">
+                    <br><br>
+                    <a class="nav-link text-center" href="https://api.whatsapp.com/send?phone=9095999111" target="_blank" title="Whatsapp">
+                        <i class="text-white btn-icons rounded p-1 pl-2 pr-2"><strong><small>Get in touch</small></strong></i>
+                    </a>
+                </span>
+            </div>
+        </div>
+    </div>
+</section>
 
 <!-- ==== About =================================================================================================== -->
 
@@ -85,22 +113,16 @@
                 <div class="card container">
                     <h3 class="text-secondary p-2">Who am I?</h3>
                     <br>
-                    <div class="container p-2">
-                        <h6>I'm a Full-stack developer based in Coimbatore, India.</h6>
-                        <p>
-                            Currently, majoring in Computer Science and Engineering in <a href="https://www.kpriet.ac.in/" target="_blank" class="text-decoration-none">KPR Institute of Engineering and Technology</a>, Coimbatore. 
-                            I'm the person who enjoys to solve the complex tasks...
+                    <div class="container p-2 lang">
+                        <p class="mt-1">
+                            I'm a Full-stack developer and data science aspirant based in Coimbatore, India.
                         </p>
-                        <p>
-                            Currently, majoring in Computer Science and Engineering in <a href="https://www.kpriet.ac.in/" target="_blank" class="text-decoration-none">KPR Institute of Engineering and Technology</a>, Coimbatore. 
-                            I'm the person who enjoys to solve the complex tasks...
+                        <p class="mt-1">
+                            Currently, pursuing Computer Science and Engineering in <strong><a href="https://www.kpriet.ac.in/" target="_blank" class="topic">KPR Institute of Engineering and Technology</a></strong>, Coimbatore. 
                         </p>
-                        Wanna get in touch or talk about a project?
-                        Feel free to contact me via email at 
-                        amirtha4501@gmail.com
-
-                        or drop a line in the form at the 
-                        contact page
+                        <p class="mt-1">
+                            I would love to turn complex problems into simple, beautiful and intuitive designs.
+                        </p>
                     </div>
                 </div>
             </div>
@@ -685,20 +707,20 @@
             <h2><strong>EXPERIENCE</strong></h2>
         </div>
 
-        <div class="container-fluid h-100">
+        <div class="container-fluid h-100 lang">
             <div class="row h-100">
-                <aside class="col-12 col-md-2 p-0 bg-dark">
-                    <nav class="navbar navbar-expand navbar-dark bg-dark flex-md-column flex-row align-items-start">
+                <aside class="col-12 col-md-2 p-0">
+                    <nav class="navbar navbar-expand flex-md-column flex-row align-items-start exp-nav">
                         <div class="collapse navbar-collapse">
                             <ul class="flex-md-column flex-row navbar-nav w-100 justify-content-between">
                                 <li class="nav-item active">
-                                    <a class="nav-link pl-0" (click)="expNav(1)">Student</a>
+                                    <a class="nav-link pl-2 rounded-right" (click)="expNav(1)">Student</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link pl-0" (click)="expNav(2)">Developer</a>
+                                    <a class="nav-link pl-2 rounded-right" (click)="expNav(2)">Developer</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link pl-0" (click)="expNav(3)">Work</a>
+                                    <a class="nav-link pl-2 rounded-right" (click)="expNav(3)">Work</a>
                                 </li>
                             </ul>
                         </div>
@@ -706,17 +728,126 @@
                 </aside>
                 <main class="col">
                     <section *ngIf="val == 1">
-                        Student
+                        <div class="card border-0">
+                            <div class="container col-11">
+                                <h3 class="topic p-2"><strong>Student</strong></h3>
+                                <ul>
+                                    <li class="p-2">
+                                        Serving as a Student Representative of the Class and member of Class Committee.
+                                    </li>
+                                    <li class="p-2">
+                                        Executive Co-ordinator of various Student Bodies and College Committees.
+                                    </li>
+                                    <li class="p-2">
+                                        Serving as a Student Representative of the Class and member of Class Committee.
+                                    </li>
+                                    <li class="p-2">
+                                        Serving as a Student Representative of the Class and member of Class Committee.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
                     </section>
                     <section *ngIf="val == 2">
-                        Developer
+                        <div class="card border-0">
+                            <div class="container col-11">
+                                <h3 class="topic p-2"><strong>Developer</strong></h3>
+                                <ul>
+                                    <li class="p-2">
+                                        Serving as a Student Representative of the Class and member of Class Committee.
+                                    </li>
+                                    <li class="p-2">
+                                        Executive Co-ordinator of various Student Bodies and College Committees.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
                     </section>
                     <section *ngIf="val == 3">
-                        Work
+                        <div class="card border-0">
+                            <div class="container col-11">
+                                <h3 class="topic p-2"><strong>Work</strong></h3>
+                                <ul>
+                                    <li class="p-2">
+                                        Serving as a Student Representative of the Class and member of Class Committee.
+                                    </li>
+                                    <li class="p-2">
+                                        Executive Co-ordinator of various Student Bodies and College Committees.
+                                    </li>
+                                    <li class="p-2">
+                                        Serving as a Student Representative of the Class and member of Class Committee.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
                     </section>
                 </main>
             </div>
         </div>
-
     </div>
 </section>
+
+<!-- ==== Contact ================================================================================================= -->
+
+<section id="contact" class="mb-5">
+    <div class="container mt-5">
+        <div class="row mt-5 mb-5 justify-content-center">
+            <h2><strong>GET IN TOUCH</strong></h2>
+        </div>
+        <div class="container text-center lang">
+            <p class="col-11 mx-auto">
+                Talk to me about a project collaboration or just say hi, by clicking the button below or send an email to 
+                <small><strong><a href="mailto:amirtha4501@gmail.com" class="topic">amirtha4501@gmail.com</a></strong></small>
+            </p>
+            <span class="icons">
+                <a class="nav-link" href="https://api.whatsapp.com/send?phone=9095999111" target="_blank" title="Whatsapp">
+                    <i class="fab fa-whatsapp text-white btn-icons rounded p-3 pl-5 pr-5"><strong><small>&nbsp;&nbsp;Say hi!</small></strong></i>
+                </a>
+            </span>
+        </div>
+    </div>
+</section>
+
+<!-- ==== Footer ================================================================================================== -->
+
+<footer class="mx-auto">
+
+    <span class="row justify-content-center mt-4 pt-4">
+
+        <span class="icons"> 
+            <a class="nav-link" href="https://stackoverflow.com/users/11783153/amirtha" target="_blank" title="StackOverflow">
+                <i class="fab fa-stack-overflow"></i>
+            </a>
+        </span>
+    
+        <span class="icons">
+            <a class="nav-link" href="https://www.hackerrank.com/amirtha4501" target="_blank" title="Hackerrank">
+                <i class="fab fa-hackerrank"></i>
+            </a>
+        </span>
+    
+        <span class="icons">
+            <a class="nav-link" href="https://www.linkedin.com/in/amirtha-easwaran-11348618a/" target="_blank" title="LinkedIn">
+                <i class="fab fa-linkedin"></i>
+            </a>
+        </span>
+    
+        <span class="icons">
+            <a class="nav-link" href="https://github.com/amirtha4501" target="_blank" title="GitHub">
+                <i class="fab fa-github"></i>
+            </a>
+        </span>
+    
+        <span class="icons">
+            <a class="nav-link" href="https://www.kaggle.com/amirthaeaswaran" target="_blank" title="Kaggle">
+                <i class="fab fa-kaggle"></i>
+            </a>
+        </span>
+    
+    </span>
+
+    <span class="pb-2 row justify-content-center">
+        <a routerLink='/home' class="topic">© 2020 Amirtha</a>
+    </span>
+
+</footer>
