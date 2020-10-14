@@ -1,0 +1,14 @@
+a {
+    text-decoration: none;
+    color: white;
+}
+
+footer {
+    background-color: black;
+}
+
+/* ==== Icon styling =============================================================================================== */
+  
+.icons a i {
+    font-size: 1.5rem;
+}
