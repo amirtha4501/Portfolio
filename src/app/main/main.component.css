@@ -381,6 +381,7 @@ div span {
 
 .exp-nav .navbar-nav {
     color:red;
+    cursor: pointer;
 }
 
 .exp-nav .nav-link{
