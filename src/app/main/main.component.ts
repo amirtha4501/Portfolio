@@ -69,7 +69,7 @@ function about() {
 })
 export class MainComponent implements OnInit {
 
-  val: number = 1;
+  val: number = 3;
 
   constructor() {
     about();
